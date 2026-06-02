@@ -1,0 +1,7 @@
+{
+  "name": "skillswap",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
