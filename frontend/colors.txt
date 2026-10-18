@@ -7,6 +7,6 @@ The landing page uses a dark violet palette:
 #FFFFFF — Primary foreground: text inside the main violet CTA and logo mark.
 #A9A3BD — Muted foreground: supporting copy, labels, availability text, step numbers, descriptions.
 #E5E0F0 — Accent: match percentage, offer values, avatar initials, ring/focus accents.
-rgba(167, 139, 250, 0.14) — Border: card outlines, navbar divider, badges, button outlines, section separators.
-#5B21B6 with transparency — Atmospheric purple: hero glow and soft card shadows.
+#a78bfa24 — Border: card outlines, navbar divider, badges, button outlines, section separators.
+#5b21b6 with transparency — Atmospheric purple: hero glow and soft card shadows.
 Opacity variants such as bg-primary/10, bg-primary/15, bg-primary/90, border-primary/50, and bg-background/90 are derived from these same tokens rather than separate colors.

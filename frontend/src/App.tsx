@@ -1,7 +1,11 @@
+import Layout from "./components/Layout/Layout"
+
 function App() {
 
   return (
-   <div className="">This is skill swap</div>
+<main >
+  <Layout/>
+</main>
   )
 }
 
