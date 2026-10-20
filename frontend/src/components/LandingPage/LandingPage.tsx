@@ -8,10 +8,11 @@ import {
   Copyright,
 } from "lucide-react";
 import { skillsList } from "./skillsList";
+import { Link } from "react-router";
 
 const LandingPage = () => {
   return (
-    <div className="bg-[#0B0912] min-h-screen w-full">
+    <div className="">
       <header className="fixed top-0 w-full p-2 md:p-5 bg-[#0B0912]/30 backdrop-blur-md flex justify-between items-center">
         <nav className="flex items-center">
           <img src={Logo} alt="skillswap logo" width={50} />
@@ -20,9 +21,12 @@ const LandingPage = () => {
           </div>
         </nav>
 
-        <button className="flex justify-center items-center h-7 w-17 bg-[#15111F] text-[#F4F1FA] text-xs md:text-sm p-2 border border-[#7C3AED]/8 hover:border-[#7C3AED]/20 rounded-2xl cursor-pointer">
+        <Link
+          to="/signin"
+          className="flex justify-center items-center h-7 w-17 bg-[#15111F] text-[#F4F1FA] text-xs md:text-sm p-2 border border-[#7C3AED]/8 hover:border-[#7C3AED]/20 rounded-2xl cursor-pointer"
+        >
           Sign in
-        </button>
+        </Link>
       </header>
 
       <div
