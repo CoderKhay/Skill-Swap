@@ -6,6 +6,7 @@ import {
   Sparkles,
   Lock,
   Copyright,
+  ArrowRight,
 } from "lucide-react";
 import { skillsList } from "./skillsList";
 import { Link } from "react-router";
@@ -30,8 +31,8 @@ const LandingPage = () => {
       </header>
 
       <div
-        id="header"
-        className="hero p-5 sm:p-4 min-h-screen md:flex md:flex-col md:gap-20 md:justify-center md:items-center"
+        id="hero"
+        className="hero p-5 sm:p-4 md:flex md:flex-col md:gap-10 md:justify-center md:items-center"
       >
         <div className="flex flex-col justify-center items-center md:gap-2 mt-28 p-5 md:mt-20">
           <section className="flex justify-center items-center gap-2 h-7 w-auto bg-[#15111F] text-[#A9A3BD] text-xs md:text-sm p-2 border border-[#7C3AED]/8 hover:border-[#7C3AED]/20 rounded-2xl cursor-pointer mb-5">
@@ -56,7 +57,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col sm:flex-row justify-center items-center gap-3">
+        <div className=" flex flex-col sm:flex-row justify-center items-center gap-3 ">
           <div className="bg-[#15111F] shadow-2xl shadow-[#5B21B6]/25 w-56 border border-[#a78bfa24] rounded-3xl p-5">
             <div className="flex items-center gap-2">
               <div className="text-white rounded-full bg-[#2c204f] border border-[#7C3AED]/8 h-8 w-8 flex items-center justify-center font-semibold text-xs">
@@ -77,7 +78,14 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="rounded-full h-15 w-15 border border-[#7C3AED]/40 shadow-2xl shadow-[#5B21B6]/25" />
+          <div className="rounded-full h-15 w-15 border border-[#7C3AED]/40 shadow-2xl shadow-[#5B21B6]/25 text-white flex justify-center items-center text-sm">
+            <div
+              role="status"
+              aria-label="Loading"
+              className="h-[80%] w-[80%] animate-spin [animation-duration:4s]  rounded-full border-2 border-[#5B21B6] border-t-[#0B0912]/10"
+            ></div>
+            <p className="absolute text-xs">96%</p>
+          </div>
 
           <div className="bg-[#15111F] shadow-2xl shadow-[#5B21B6]/25 w-56 border border-[#a78bfa24] rounded-3xl p-5">
             <div className="flex items-center gap-2">
@@ -107,7 +115,7 @@ const LandingPage = () => {
       <div className="">
         <div
           id="work"
-          className="p-10 mt-10 flex flex-col justify-center gap-3 md:h-screen"
+          className="p-10 mt-2 flex flex-col justify-center gap-3 md:h-screen"
         >
           <h6 className="text-[#7C3AED] font-semibold text-xs md:text-sm tracking-widest pl-3">
             SIMPLE BY DESIGN
@@ -162,7 +170,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="p-5 flex flex-col justify-center gap-15 md:flex lg:flex lg:flex-row lg:justify-center lg:items-center mt-15 md:mt-10">
+        <div className="p-5 flex flex-col justify-center gap-15 md:flex lg:flex lg:flex-row lg:justify-center lg:items-center mt-15 md:mt-8">
           <div className="md:w-[80%] md:flex md:flex-col md:justify-center md:gap-8">
             <h6 className="text-[#7C3AED] font-semibold text-xs md:text-sm tracking-widest pl-3">
               PRIVATE BY DESIGN
@@ -249,8 +257,8 @@ const LandingPage = () => {
         <h2 className="text-[#7C3AED] md:text-5xl text-shadow-sm text-shadow-[#7C3AED]">
           is out there.
         </h2>
-        <button className="text-white mt-7 font-light border border-[#a78bfa24] text-sm md:text-lg p-2 rounded-3xl bg-[#5B21B6] w-36 cursor-pointer shadow-2xl shadow-[#5B21B6]/80">
-          Find your match
+        <button className="text-white mt-7 font-light border border-[#a78bfa24] text-sm md:text-lg p-2 rounded-3xl bg-[#5B21B6] cursor-pointer shadow-2xl shadow-[#5B21B6]/80 flex items-center justify-center gap-2">
+          Find your match <ArrowRight />
         </button>
       </div>
 
@@ -265,7 +273,7 @@ const LandingPage = () => {
         </section>
         <section className="text-[#A9A3BD] flex items-center gap-10 text-xs p-3 md:p-5">
           <a href="#work">How it works</a>
-          <a href="#header">Back to top</a>
+          <a href="#hero">Back to top</a>
           <p className="flex items-center gap-1">
             <Copyright width={12} />
             <span>2026</span>
