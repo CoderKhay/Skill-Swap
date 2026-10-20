@@ -7,6 +7,7 @@ import {
   Lock,
   Copyright,
   ArrowRight,
+  ArrowDown,
 } from "lucide-react";
 import { skillsList } from "./skillsList";
 import { Link } from "react-router";
@@ -14,7 +15,7 @@ import { Link } from "react-router";
 const LandingPage = () => {
   return (
     <div className="">
-      <header className="fixed top-0 w-full p-2 md:p-5 bg-[#0B0912]/30 backdrop-blur-md flex justify-between items-center">
+      <header className="fixed top-0 w-full p-2 md:p-5 bg-[#0B0912]/30 backdrop-blur-md flex justify-between items-center z-10">
         <nav className="flex items-center">
           <img src={Logo} alt="skillswap logo" width={50} />
           <div className="font-semibold text-sm md:text-lg text-[#F4F1FA]">
@@ -124,8 +125,10 @@ const LandingPage = () => {
             A better kind of <span className="text-[#A9A3BD]">exchange.</span>
           </h1>
 
-          <div className="mt-10 flex flex-col gap-3 md:flex md:flex-row md:justify-between">
-            <div className="w-full h-auto bg-[#15111F] border border-[#a78bfa24] rounded-3xl p-5 md:w-[35%]">
+          <div
+            className={`mt-10 flex flex-col gap-3 md:flex md:flex-row md:justify-between`}
+          >
+            <div className="relative w-full h-auto bg-[#15111F] border border-[#a78bfa24] rounded-3xl p-5 md:w-[35%]">
               <section className="flex justify-between items-center mb-10">
                 <div className="w-8 h-8 bg-[#15111F] flex justify-center items-center rounded-full border border-[#7C3AED]/8">
                   <CircleUserRound width={20} color="#7C3AED" />
@@ -138,8 +141,9 @@ const LandingPage = () => {
                   Add the skills you have and the ones you love sharing.
                 </p>
               </div>
+              <ArrowDown className="absolute -bottom-4 left-[50%] text-[#7C3AED]/60 sm:-rotate-90 sm:top-[50%] sm:left-53" />
             </div>
-            <div className="w-full h-auto bg-[#15111F] border border-[#a78bfa24] rounded-3xl p-5 md:w-[35%]">
+            <div className="relative w-full h-auto bg-[#15111F] border border-[#a78bfa24] rounded-3xl p-5 md:w-[35%]">
               <section className="flex justify-between items-center mb-10">
                 <div className="w-8 h-8 bg-[#15111F] flex justify-center items-center rounded-full border border-[#7C3AED]/8">
                   <Handshake width={20} color="#7C3AED" />
@@ -152,6 +156,7 @@ const LandingPage = () => {
                   Name the skill you want to learn without the awkward ask.
                 </p>
               </div>
+              <ArrowDown className="absolute -bottom-4 left-[50%] text-[#7C3AED]/60 sm:-rotate-90 sm:top-[50%] sm:left-53 md:left-60" />
             </div>
             <div className="w-full h-auto bg-[#15111F] border border-[#a78bfa24] rounded-3xl p-5 md:w-[35%] ">
               <section className="flex justify-between items-center mb-10">
@@ -217,7 +222,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <hr className="border border-[#7C3AED]/10 mt-35" />
+      <hr className="border border-[#7C3AED]/10 mt-26 md:mt-35" />
 
       <div className="p-5 md:h-screen ">
         <div className="mt-15">
