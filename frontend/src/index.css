@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-darkmode-bg: #0b0912;
+  --color-darkmode-text: #f4f1fa;
+  --color-darkmode-accent: #7c3aed;
+  --color-darkmode-hover: #a78bfa;
+  --color-lightmode-bg: #f7f4ef;
+  --color-lightmode-text: #211b2b;
+  --color-lightmode-accent: #6d28d9;
+  --color-lightmode-hover: #7c3aed;
+}

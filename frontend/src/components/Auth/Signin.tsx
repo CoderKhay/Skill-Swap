@@ -8,7 +8,7 @@ const Signin = () => {
     <div className="w-full min-h-screen p-5 ">
       <Link
         to=".."
-        className="text-[#a9a3bd] hover:text-white transition-all duration-150 flex gap-3 mb-15"
+        className="text-[#a9a3bd] hover:text-white transition-all duration-150 flex gap-3 mb-10 mt-5"
       >
         <ArrowLeft />
         Back to SkillSwap
