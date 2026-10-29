@@ -8,7 +8,7 @@ const Signin = () => {
     <div className="w-full min-h-screen p-5 ">
       <Link
         to=".."
-        className="text-[#a9a3bd] hover:text-white transition-all duration-150 flex gap-3 mb-10 mt-5"
+        className="text-[#a9a3bd] hover:text-white transition-all duration-150 flex gap-3 mb-10 mt-5 font-mono"
       >
         <ArrowLeft />
         Back to SkillSwap
@@ -17,18 +17,18 @@ const Signin = () => {
         <div className="bg-[#15111F] shadow-2xl shadow-[#5B21B6]/25 border border-[#a78bfa24] rounded-2xl p-5 w-full sm:w-[60%] md:w-[50%]">
           <img src={Logo} alt="sillswap" className="w-10" />
           <div className="mt-2 flex flex-col gap-1">
-            <h6 className="text-[#7C3AED]">Welcome back</h6>
+            <h6 className="text-[#7C3AED] font-mono">Welcome back</h6>
             <h2 className="text-white text-2xl font-semibold">
               Sign in to SkillSwap
             </h2>
-            <p className="text-[#a9a3bd] text-sm">
+            <p className="text-[#a9a3bd] text-sm font-mono ">
               Pick up where you left off and find your next skill exchange
             </p>
           </div>
 
           <div className="mt-4 flex flex-col gap-3">
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-white">
+              <label htmlFor="email" className="text-white font-mono">
                 Email address
               </label>
               <input
@@ -40,10 +40,12 @@ const Signin = () => {
             </div>
             <div className="flex flex-col gap-2">
               <section className="flex justify-between">
-                <label htmlFor="email" className="text-white">
+                <label htmlFor="email" className="text-white font-mono">
                   Password
                 </label>
-                <button className="text-white">Forgot password ?</button>
+                <button className="text-white font-mono">
+                  Forgot password ?
+                </button>
               </section>
               <input
                 id="email"
@@ -53,12 +55,12 @@ const Signin = () => {
               />
             </div>
 
-            <button className="bg-[#7C3AED] text-white flex justify-center items-center gap-2 text-sm mt-3 p-2 rounded-3xl cursor-pointer">
+            <button className="bg-[#7C3AED] text-white flex justify-center items-center gap-2 text-sm mt-3 p-2 rounded-3xl cursor-pointer font-mono">
               <p>Sign in</p>
               <ArrowRight />
             </button>
 
-            <div className="flex items-center mt-3 justify-center gap-2 text-[#a9a3bd] text-sm">
+            <div className="flex items-center mt-3 justify-center gap-2 text-[#a9a3bd] text-sm font-mono">
               <Lock width={20} />
               <p>Your account details stay private.</p>
             </div>
@@ -67,7 +69,10 @@ const Signin = () => {
 
             <div className="mt-3 mb-3 flex justify-center gap-2">
               <p className="text-[#a9a3bd]">New to skillswap ?</p>
-              <Link to="/signup" className="text-white hover:text-[#7C3AED]">
+              <Link
+                to="/signup"
+                className="text-white hover:text-[#7C3AED] font-mono"
+              >
                 Create an account
               </Link>
             </div>

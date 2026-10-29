@@ -25,7 +25,7 @@ const LandingPage = () => {
 
         <Link
           to="/signin"
-          className="flex justify-center items-center h-7 w-17 md:w-20 bg-[#15111F] text-[#F4F1FA] text-xs md:text-sm p-2 border border-[#7C3AED]/8 hover:border-[#7C3AED]/20 rounded-2xl cursor-pointer font-mono"
+          className="flex justify-center items-center h-7 w-20 bg-[#15111F] text-[#F4F1FA] text-xs md:text-sm p-2 border border-[#7C3AED]/8 hover:border-[#7C3AED]/20 rounded-2xl cursor-pointer font-mono"
         >
           Sign in
         </Link>
