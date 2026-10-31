@@ -60,11 +60,11 @@ const Signin = () => {
 
             <hr className="border border-[#7C3AED]/10 mt-2" />
 
-            <div className="mt-3 mb-3 flex justify-center gap-2">
-              <p className="text-[#a9a3bd]">New to skillswap ?</p>
+            <div className="mt-3 mb-3 flex justify-center items-center gap-3">
+              <p className="text-[#a9a3bd] text-nowrap">New to skillswap ?</p>
               <Link
                 to="signup"
-                className="text-white hover:text-[#7C3AED] font-mono"
+                className="text-white hover:text-[#7C3AED] font-mono text-nowrap"
               >
                 Create an account
               </Link>
