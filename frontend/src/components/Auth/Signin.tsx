@@ -1,20 +1,13 @@
 import { Link } from "react-router";
-import { ArrowLeft, Lock } from "lucide-react";
+import { Lock } from "lucide-react";
 import Logo from "../../../src/assets/image.png";
 import { ArrowRight } from "lucide-react";
 
 const Signin = () => {
   return (
     <div className="w-full min-h-screen p-5 ">
-      <Link
-        to=".."
-        className="text-[#a9a3bd] hover:text-white transition-all duration-150 flex gap-3 mb-10 mt-5 font-mono"
-      >
-        <ArrowLeft />
-        Back to SkillSwap
-      </Link>
       <div className="sm:flex sm:justify-center">
-        <div className="bg-[#15111F] shadow-2xl shadow-[#5B21B6]/25 border border-[#a78bfa24] rounded-2xl p-5 w-full sm:w-[60%] md:w-[50%]">
+        <div className="bg-[#15111F] shadow-2xl shadow-[#5B21B6]/25 border border-[#a78bfa24] rounded-2xl p-5 w-full sm:w-[50%] md:w-[40%]">
           <img src={Logo} alt="sillswap" className="w-10" />
           <div className="mt-2 flex flex-col gap-1">
             <h6 className="text-[#7C3AED] font-mono">Welcome back</h6>
@@ -43,7 +36,7 @@ const Signin = () => {
                 <label htmlFor="email" className="text-white font-mono">
                   Password
                 </label>
-                <button className="text-white font-mono">
+                <button className="text-white font-mono cursor-pointer">
                   Forgot password ?
                 </button>
               </section>
@@ -70,7 +63,7 @@ const Signin = () => {
             <div className="mt-3 mb-3 flex justify-center gap-2">
               <p className="text-[#a9a3bd]">New to skillswap ?</p>
               <Link
-                to="/signup"
+                to="signup"
                 className="text-white hover:text-[#7C3AED] font-mono"
               >
                 Create an account
