@@ -21,7 +21,7 @@ const Signin = () => {
             <h2 className="text-white text-2xl font-semibold">
               Sign in to SkillSwap
             </h2>
-            <p className="text-[#a9a3bd] text-sm font-mono ">
+            <p className="text-[#a9a3bd] text-sm ">
               Pick up where you left off and find your next skill exchange
             </p>
           </div>
